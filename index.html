@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Confirmado | Tu App</title>
+    <title>Email Confirmado</title>
     <style>
         :root {
             --primary: #4361ee;
@@ -104,7 +104,18 @@
             ✓
         </div>
         <h1>¡Email confirmado con éxito!</h1>
-        <p>Tu dirección de correo electrónico ha sido verificada correctamente. Ahora puedes volver a la app y iniciar sesion.</p>
+        <p>Tu dirección de correo electrónico ha sido verificada correctamente. Ahora puedes volver a la app.</p>
+        
+        <button class="btn" onclick="window.location.href='testapp://home'">
+            Volver a la App
+        </button>
     </div>
+
+    <script>
+        // Intentar abrir la app automáticamente después de 1.5 segundos
+        setTimeout(function() {
+            window.location.href = 'testapp://home';
+        }, 1500);
+    </script>
 </body>
 </html>
